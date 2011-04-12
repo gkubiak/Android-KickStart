@@ -17,7 +17,7 @@
     </modules>
 
     <scm>
-        <connection>scm:git:http://www.javart.com.pl/git/javart/git-sandbox.git</connection>
+        <connection>scm:git:http://www.javart.com.pl/git/javart/android-kickstart</connection>
     </scm>
 
     <build>
