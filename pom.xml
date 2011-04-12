@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
@@ -15,6 +16,10 @@
     <modules>
         <module>kickstart-app</module>
     </modules>
+
+    <scm>
+        <connection>scm:git:http://www.javart.com.pl/git/javart/git-sandbox.git</connection>
+    </scm>
 
     <build>
         <pluginManagement>
@@ -144,6 +149,21 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+
+    <distributionManagement>
+        <repository>
+            <id>javart-binaries</id>
+            <name>Javart Binaries</name>
+            <url>https://www.javart.com.pl/repo/content/repositories/javart-binaries</url>
+        </repository>
+        <snapshotRepository>
+            <id>javart-snapshots</id>
+            <name>Javart Snapshots</name>
+            <url>https://www.javart.com.pl/repo/content/repositories/javart-snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
 
     <dependencies>
         <dependency>
