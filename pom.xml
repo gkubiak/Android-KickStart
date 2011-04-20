@@ -5,7 +5,7 @@
 
     <groupId>pl.javart.training</groupId>
     <artifactId>android-kickstart</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>${project.artifactId}-${project.version}</name>
@@ -15,6 +15,10 @@
     <modules>
         <module>kickstart-app</module>
     </modules>
+
+    <scm>
+        <connection>scm:git:http://www.javart.com.pl/git/javart/android-kickstart</connection>
+    </scm>
 
     <build>
         <pluginManagement>
@@ -144,6 +148,21 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+
+    <distributionManagement>
+        <repository>
+            <id>javart-binaries</id>
+            <name>Javart Binaries</name>
+            <url>https://www.javart.com.pl/repo/content/repositories/javart-binaries</url>
+        </repository>
+        <snapshotRepository>
+            <id>javart-snapshots</id>
+            <name>Javart Snapshots</name>
+            <url>https://www.javart.com.pl/repo/content/repositories/javart-snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
 
     <dependencies>
         <dependency>
